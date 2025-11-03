@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cjyr5m8s8sv56"
+path="res://.godot/imported/inkadevs_sequence_puzzle.dialogue-983f9d6927fe6adfdb6c88c850dcae72.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/inkadevs/3_sequence_puzzle/inkadevs_sequence_puzzle.dialogue"
+dest_files=["res://.godot/imported/inkadevs_sequence_puzzle.dialogue-983f9d6927fe6adfdb6c88c850dcae72.tres"]
+
+[params]
+
+defaults=true

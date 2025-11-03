@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://o0ipfottdqdj"
+path="res://.godot/imported/inkadevs_combat.dialogue-c8258a300af1e96dcd138d17fd5fa59d.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/inkadevs/2_combat/combat_components/inkadevs_combat.dialogue"
+dest_files=["res://.godot/imported/inkadevs_combat.dialogue-c8258a300af1e96dcd138d17fd5fa59d.tres"]
+
+[params]
+
+defaults=true

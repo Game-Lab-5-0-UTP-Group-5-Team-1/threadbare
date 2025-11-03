@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bjkk3dryv6hp3"
+path="res://.godot/imported/inkadevs_outro.dialogue-68cfdaab0548526939f8cc5a0009d26c.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/inkadevs/4_outro/outro_components/inkadevs_outro.dialogue"
+dest_files=["res://.godot/imported/inkadevs_outro.dialogue-68cfdaab0548526939f8cc5a0009d26c.tres"]
+
+[params]
+
+defaults=true

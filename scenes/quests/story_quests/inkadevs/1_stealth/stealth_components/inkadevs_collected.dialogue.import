@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://brvvdpqyowhcx"
+path="res://.godot/imported/inkadevs_collected.dialogue-6d422ba5dc837c814bd0f6c808ed7f4e.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/inkadevs/1_stealth/stealth_components/inkadevs_collected.dialogue"
+dest_files=["res://.godot/imported/inkadevs_collected.dialogue-6d422ba5dc837c814bd0f6c808ed7f4e.tres"]
+
+[params]
+
+defaults=true

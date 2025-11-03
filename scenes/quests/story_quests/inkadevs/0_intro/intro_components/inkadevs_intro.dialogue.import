@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c5nxoppjts4jr"
+path="res://.godot/imported/inkadevs_intro.dialogue-5da8f59e8c881b8e39b1cbc822e01d9f.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/inkadevs/0_intro/intro_components/inkadevs_intro.dialogue"
+dest_files=["res://.godot/imported/inkadevs_intro.dialogue-5da8f59e8c881b8e39b1cbc822e01d9f.tres"]
+
+[params]
+
+defaults=true
