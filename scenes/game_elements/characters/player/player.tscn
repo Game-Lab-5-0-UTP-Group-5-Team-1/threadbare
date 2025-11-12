@@ -55,7 +55,7 @@ anim_speed_max = 1.0
 height = 42.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_blfj0"]
-size = Vector2(110, 80)
+size = Vector2(38, 63)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h17s1"]
 radius = 20.0
@@ -556,7 +556,7 @@ script = ExtResource("6_3in67")
 character = NodePath("../..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInteraction/InteractZone"]
-position = Vector2(47, -30)
+position = Vector2(1, -21)
 shape = SubResource("RectangleShape2D_blfj0")
 debug_color = Color(0.600391, 0.54335, 0, 0.42)
 
