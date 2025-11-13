@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=34 format=4 uid="uid://d37mebu7atru7"]
+=======
+[gd_scene load_steps=20 format=3 uid="uid://d37mebu7atru7"]
+>>>>>>> origin/main
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_0cn6r"]
 [ext_resource type="TileSet" uid="uid://cfq6453gjaw4f" path="res://scenes/quests/story_quests/my_quest/tileset/mystoryquest_tileset.tres" id="2_6qrc1"]
@@ -22,9 +26,115 @@ _data = {
 }
 point_count = 2
 
+<<<<<<< HEAD
 [sub_resource type="Curve2D" id="Curve2D_vend2"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 488, -91, 0, 0, 0, 0, 480, 106, 0, 0, 0, 0, 356, 208, 0, 0, 0, 0, 239, 131, 0, 0, 0, 0, 166, 26, 0, 0, 0, 0, 169, -97, 0, 0, 0, 0, 354, -101, 0, 0, 0, 0, 488, -91)
+=======
+[node name="Guard" type="CharacterBody2D" groups=["guard_enemy"]]
+collision_layer = 0
+collision_mask = 528
+motion_mode = 1
+script = ExtResource("1_g173s")
+
+[node name="GuardMovement" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("2_0hjcv")
+
+[node name="SightRayCast" type="RayCast2D" parent="."]
+unique_name_in_owner = true
+collision_mask = 8
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="InstantDetectionArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InstantDetectionArea"]
+shape = SubResource("CircleShape2D_g173s")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -19)
+collision_layer = 0
+script = ExtResource("4_mswbt")
+
+[node name="Light" type="PointLight2D" parent="DetectionArea"]
+position = Vector2(37.3333, 1.33333)
+scale = Vector2(0.340496, 0.340496)
+color = Color(1, 1, 0.796078, 1)
+blend_mode = 2
+shadow_enabled = true
+shadow_filter = 1
+shadow_filter_smooth = 0.5
+texture = ExtResource("3_0hjcv")
+offset = Vector2(377.88, 10.7686)
+script = ExtResource("4_lptvm")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DetectionArea"]
+position = Vector2(138.99998, -15)
+rotation = 1.5704789
+polygon = PackedVector2Array(302, 48, 283, 52, 279, 52, 101, 114, 98, 114, 79, 124, 77, 124, 72, 131, 71, 131, 71, 138, 78, 145, 78, 146, 95, 154, 95, 155, 275, 226, 275, 227, 292, 231, 292, 232, 312, 230, 316, 230, 330, 222, 332, 222, 340, 214, 341, 214, 346, 205, 347, 205, 351, 185, 351, 100, 347, 82, 347, 79, 338, 67, 338, 65, 325, 55, 325, 54, 302, 47)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -16)
+sprite_frames = ExtResource("5_mswbt")
+animation = &"walk"
+autoplay = "idle"
+
+[node name="CharacterSpriteBehavior" type="Node2D" parent="AnimatedSprite2D" node_paths=PackedStringArray("character", "sprite")]
+script = ExtResource("7_klpct")
+character = NodePath("../..")
+play_animations = false
+sprite = NodePath("..")
+metadata/_custom_type_script = "uid://dy68p7gf07pi3"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nv25s")
+
+[node name="PlayerAwareness" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+material = SubResource("CanvasItemMaterial_nv25s")
+offset_left = -62.0
+offset_top = -172.0
+offset_right = 62.0
+offset_bottom = -48.0
+pivot_offset = Vector2(62, 102)
+step = 0.01
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("3_pnkgp")
+texture_progress = ExtResource("3_pnkgp")
+tint_under = Color(1, 1, 1, 0.392157)
+tint_progress = Color(1, 1, 0, 1)
+
+[node name="DebugInfo" type="Label" parent="."]
+unique_name_in_owner = true
+visible = false
+z_index = 100
+material = SubResource("CanvasItemMaterial_0hjcv")
+offset_left = -36.0
+offset_top = 20.0
+offset_right = 4.0
+offset_bottom = 43.0
+text = "position: (0.0, 0.0)
+state: Patroling
+previous_patrol_point_idx: -1
+current_patrol_point_idx: 0
+time left: 0.00
+target point: (0.0, 0.0)
+"
+label_settings = SubResource("LabelSettings_nv25s")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_innil")
+>>>>>>> origin/main
 }
 point_count = 8
 
