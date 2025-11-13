@@ -148,6 +148,7 @@ texture = ExtResource("3_06i44")
 
 [node name="Player" parent="." instance=ExtResource("3_xnyqe")]
 position = Vector2(131, 463)
+scale = Vector2(1.1526635, 1.3288234)
 sprite_frames = ExtResource("4_06i44")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
