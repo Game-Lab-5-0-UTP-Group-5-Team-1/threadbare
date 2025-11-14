@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ft60mn6xov5i"
+path="res://.godot/imported/RTS2 Loop 005 60Bpm.wav-5ed4b60d656d396f1e8284e02b4bdd6c.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/my_quest/audio_assets/RTS2 Loop 005 60Bpm.wav"
+dest_files=["res://.godot/imported/RTS2 Loop 005 60Bpm.wav-5ed4b60d656d396f1e8284e02b4bdd6c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
