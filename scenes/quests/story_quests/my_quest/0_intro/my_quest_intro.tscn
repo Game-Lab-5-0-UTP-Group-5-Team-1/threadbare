@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://cdfl51my8oow7"]
+[gd_scene load_steps=21 format=4 uid="uid://cdfl51my8oow7"]
 
 [ext_resource type="TileSet" uid="uid://cfq6453gjaw4f" path="res://scenes/quests/story_quests/my_quest/tileset/mystoryquest_tileset.tres" id="1_hpun7"]
 [ext_resource type="Texture2D" uid="uid://cm6c2p4qyhhtr" path="res://scenes/quests/story_quests/my_quest/0_intro/intro_components/79214347-pixel-art-native-american-woman.jpg" id="2_hpun7"]
 [ext_resource type="SpriteFrames" uid="uid://dslkbv8w5d82g" path="res://scenes/quests/story_quests/my_quest/player_components/my_quest_player.tres" id="3_tuad4"]
+[ext_resource type="Texture2D" uid="uid://blxbpaoiuvklh" path="res://scenes/quests/story_quests/my_quest/player_components/my_colla_quest_idle.png" id="4_2piuk"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_f6cfh"]
 [ext_resource type="Resource" uid="uid://comrb0ivakje8" path="res://scenes/quests/story_quests/my_quest/0_intro/intro_components/my_quest_intro.dialogue" id="5_se8el"]
 [ext_resource type="PackedScene" uid="uid://v3usqiwy5wpr" path="res://scenes/game_elements/props/decoration/rock/rock.tscn" id="6_w28ju"]
@@ -97,6 +98,70 @@ _data = {
 &"walk_on": SubResource("Animation_r4sdy")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuad4"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6cfh"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_se8el"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w28ju"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owkch"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgs8e"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4sdy"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydfkd"]
+atlas = ExtResource("4_2piuk")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1glie"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuad4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6cfh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_se8el")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w28ju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owkch")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qgs8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r4sdy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydfkd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Intro" type="Node2D"]
 
 [node name="TileMapLayers" type="Node2D" parent="."]
@@ -108,6 +173,7 @@ tile_set = ExtResource("1_hpun7")
 metadata/_edit_lock_ = true
 
 [node name="IntroImage" type="Sprite2D" parent="TileMapLayers"]
+visible = false
 modulate = Color(0.44291076, 0.44291076, 0.44291073, 1)
 self_modulate = Color(1, 1, 0.7607843, 1)
 position = Vector2(764.4612, 223.8986)
@@ -120,7 +186,7 @@ tile_map_data = PackedByteArray("AAAKAAEABgAAAAAAAAAKAAIABgADAAEAAAAKAAMABgADAAE
 tile_set = ExtResource("1_hpun7")
 
 [node name="Cliffs" type="TileMapLayer" parent="TileMapLayers"]
-tile_map_data = PackedByteArray("AAAAAAAAAQAKAAAAAAADAAIAAQAKAAAAAAABAAQAAQALAAAAAAAHAAIAAQALAAAAAAAGAAQAAQAMAAAAAAAEAAAAAQAMAAAAAAAJAAYAAQAKAAAAAAALAAAAAQAKAAAAAAANAAYAAQAMAAAAAAAOAAMAAQAMAAAAAAAEAAgAAQAMAAAAAAALAAcAAwABAAAAAAAKAAcAAwABAAAAAAAJAAcAAwABAAAAAAAIAAcAAwABAAAAAAAHAAcAAwABAAAAAAAGAAcAAwABAAAAAAAFAAcAAwABAAAAAAAEAAcAAwABAAAAAAADAAcAAwABAAAAAAACAAcAAwABAAAAAAABAAcAAwABAAAAAAAMAAcAAwABAAAAAAANAAcAAwACAAAAAAAAAAcAAwABAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAAAAAAQAKAAAAAAADAAIAAQAKAAAAAAABAAQAAQALAAAAAAAHAAIAAQALAAAAAAAGAAQAAQAMAAAAAAAEAAAAAQAMAAAAAAAJAAYAAQAKAAAAAAALAAAAAQAKAAAAAAANAAYAAQAMAAAAAAAOAAMAAQAMAAAAAAAEAAgAAQAGAAIAAAACAAcAAQAGAAAAAAADAAcAAQAGAAAAAAAEAAcAAQAGAAAAAAAFAAcAAQAGAAAAAAAGAAcAAQAGAAAAAAAHAAcAAQAGAAAAAAAIAAcAAQAGAAAAAAAJAAcAAQAGAAAAAAAKAAcAAQAGAAAAAAALAAcAAQAGAAAAAAAMAAcAAQAGAAAAAAANAAcAAQAGAAAAAAABAAcAAQAGAAAAAAAAAAcAAQAFAAAAAAAAAAgAAQAFAAIAAAAOAAcAAQAHAAAAAAABAAgAAQAGAAIAAAACAAgAAQAGAAIAAAADAAgAAQAGAAIAAAAFAAgAAQAGAAIAAAAGAAgAAQAGAAIAAAAHAAgAAQAGAAIAAAAIAAgAAQAGAAIAAAAJAAgAAQAGAAIAAAAKAAgAAQAGAAIAAAALAAgAAQAGAAIAAAAMAAgAAQAGAAIAAAANAAgAAQAGAAIAAAAOAAgAAQAHAAIAAAA=")
 tile_set = ExtResource("1_hpun7")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -147,6 +213,10 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_ydfkd")
 }
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(771, 214)
+sprite_frames = SubResource("SpriteFrames_1glie")
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
 
