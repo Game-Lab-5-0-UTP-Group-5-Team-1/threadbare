@@ -1,9 +1,15 @@
-[gd_resource type="Resource" script_class="Quest" load_steps=2 format=3 uid="uid://4yswnn2fwh45"]
+[gd_resource type="Resource" script_class="Quest" load_steps=3 format=3 uid="uid://4yswnn2fwh45"]
 
 [ext_resource type="Script" uid="uid://dts1hwdy3phin" path="res://scenes/menus/storybook/components/quest.gd" id="1_nsb1j"]
+[ext_resource type="SpriteFrames" uid="uid://dslkbv8w5d82g" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_quest_player.tres" id="2_3fphb"]
 
 [resource]
 script = ExtResource("1_nsb1j")
-title = "my_quest"
+title = "El rescate de Sisa"
+description = "Cuando Supay roba a Sumac Sisa por envidia, el Inca Sinchi Alqamari inicia una búsqueda sin retorno. Para llegar al templo final, deberá sobrevivir a los desafios, una caberna de guardianes andinos y el jefe Muqui Supay. Es una travesía de fe, pérdida y sangre, cuyo camino se sella con el sacrificio."
+authors = Array[String](["Cervando", "Leonardo", "Luis"])
+affiliation = "UTP"
 first_scene = "uid://cdfl51my8oow7"
+sprite_frames = ExtResource("2_3fphb")
+animation_name = &"idle"
 metadata/_custom_type_script = "uid://dts1hwdy3phin"
