@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bm5pfae6h7isn"
+path="res://.godot/imported/RTS2 Loop 010 80BPM.wav-39b757b807fbc693fea2901ca7cc000f.sample"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/audio_assets/RTS2 Loop 010 80BPM.wav"
+dest_files=["res://.godot/imported/RTS2 Loop 010 80BPM.wav-39b757b807fbc693fea2901ca7cc000f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

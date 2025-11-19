@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cmdebvqtbe56l"
+path="res://.godot/imported/my_quest_outro.dialogue-77e4456fc512061ec92fe15b88149195.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/4_outro/outro_components/my_quest_outro.dialogue"
+dest_files=["res://.godot/imported/my_quest_outro.dialogue-77e4456fc512061ec92fe15b88149195.tres"]
+
+[params]
+
+defaults=true

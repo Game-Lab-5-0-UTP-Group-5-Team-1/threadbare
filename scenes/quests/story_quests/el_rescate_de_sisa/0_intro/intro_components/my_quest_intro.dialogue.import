@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://comrb0ivakje8"
+path="res://.godot/imported/my_quest_intro.dialogue-c78970ef77c539f85864ee9f89179d9b.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/0_intro/intro_components/my_quest_intro.dialogue"
+dest_files=["res://.godot/imported/my_quest_intro.dialogue-c78970ef77c539f85864ee9f89179d9b.tres"]
+
+[params]
+
+defaults=true

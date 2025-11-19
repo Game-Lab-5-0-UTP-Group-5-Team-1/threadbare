@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=4 uid="uid://cv7ha4jkjakqf"]
 
-[ext_resource type="PackedScene" uid="uid://cdfl51my8oow7" path="res://scenes/quests/story_quests/my_quest/0_intro/my_quest_intro.tscn" id="1_s2ta7"]
+[ext_resource type="PackedScene" uid="uid://cdfl51my8oow7" path="res://scenes/quests/story_quests/el_rescate_de_sisa/0_intro/my_quest_intro.tscn" id="1_s2ta7"]
 
 [node name="Intro" instance=ExtResource("1_s2ta7")]
 
