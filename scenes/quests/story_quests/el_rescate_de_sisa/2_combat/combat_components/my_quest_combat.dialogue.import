@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://boleqk7uvyjei"
+path="res://.godot/imported/my_quest_combat.dialogue-386257430232c5126f52d46a7e16de5b.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/2_combat/combat_components/my_quest_combat.dialogue"
+dest_files=["res://.godot/imported/my_quest_combat.dialogue-386257430232c5126f52d46a7e16de5b.tres"]
+
+[params]
+
+defaults=true

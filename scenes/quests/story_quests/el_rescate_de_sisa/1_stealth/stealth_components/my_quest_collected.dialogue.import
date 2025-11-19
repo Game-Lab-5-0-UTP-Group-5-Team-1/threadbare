@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://f4v4xsleuo1i"
+path="res://.godot/imported/my_quest_collected.dialogue-13a0ee6bdfc4f9ce7265025618897e6a.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/my_quest_collected.dialogue"
+dest_files=["res://.godot/imported/my_quest_collected.dialogue-13a0ee6bdfc4f9ce7265025618897e6a.tres"]
+
+[params]
+
+defaults=true
