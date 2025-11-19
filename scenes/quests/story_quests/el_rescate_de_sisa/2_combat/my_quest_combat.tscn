@@ -49,6 +49,8 @@ sprite_frames = ExtResource("5_e7klp")
 position = Vector2(839, 336.00003)
 scale = Vector2(1.8364596, 1.8241454)
 throwing_period = 0.5
+odd_shoot = true
+autostart = true
 sprite_frames = ExtResource("7_2jb75")
 projectile_sprite_frames = ExtResource("8_7ww5d")
 
