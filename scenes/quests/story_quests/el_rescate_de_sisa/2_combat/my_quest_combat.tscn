@@ -96,6 +96,7 @@ intro_dialogue = ExtResource("2_dl1oh")
 metadata/_custom_type_script = "uid://cp54mgi54nywo"
 
 [node name="TileMapLayers" type="Node2D" parent="."]
+modulate = Color(0.47007585, 0.47007585, 0.47007585, 1)
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="TileMapLayers"]
 modulate = Color(0.50928617, 0.50928617, 0.50928617, 1)
