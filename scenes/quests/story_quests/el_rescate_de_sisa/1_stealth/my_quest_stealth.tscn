@@ -557,7 +557,7 @@ shape = SubResource("RectangleShape2D_ui0kk")
 debug_color = Color(0, 0, 0, 0.42)
 
 [node name="Checkpoint2" parent="Checkpoints" instance=ExtResource("7_t6ury")]
-position = Vector2(3345, 2752)
+position = Vector2(3371, 2742)
 dialogue = ExtResource("8_q0wfm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Checkpoints/Checkpoint2"]
