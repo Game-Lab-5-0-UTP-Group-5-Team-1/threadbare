@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://2rbpl811wlv1" path="res://scenes/game_elements/props/background_music/background_music.tscn" id="19_t6ury"]
 [ext_resource type="AudioStream" uid="uid://cybe3u6fclilt" path="res://scenes/quests/story_quests/el_rescate_de_sisa/audio_assets/RTS2 Loop 004.wav" id="20_q0wfm"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_06i44"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_07u2b"]
 texture = ExtResource("4_gsfom")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -47,9 +47,9 @@ texture_region_size = Vector2i(64, 64)
 
 [sub_resource type="TileSet" id="TileSet_gsfom"]
 tile_size = Vector2i(64, 64)
-sources/0 = SubResource("TileSetAtlasSource_06i44")
+sources/0 = SubResource("TileSetAtlasSource_07u2b")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ntvxf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ii3mk"]
 texture = ExtResource("5_wxm85")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -88,7 +88,7 @@ texture_region_size = Vector2i(64, 64)
 [sub_resource type="TileSet" id="TileSet_boo2d"]
 tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_ntvxf")
+sources/0 = SubResource("TileSetAtlasSource_ii3mk")
 
 [sub_resource type="Curve2D" id="Curve2D_woqv8"]
 _data = {

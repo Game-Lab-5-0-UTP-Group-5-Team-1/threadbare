@@ -168,11 +168,11 @@ audio_stream = ExtResource("12_ym4w3")
 y_sort_enabled = true
 
 [node name="HintSign1" parent="OnTheGround/SequencePuzzle/Signs" instance=ExtResource("13_stx02")]
-position = Vector2(506, 210)
+position = Vector2(388, 274)
 sprite_frames = ExtResource("14_7smp2")
 
 [node name="HintSign2" parent="OnTheGround/SequencePuzzle/Signs" instance=ExtResource("13_stx02")]
-position = Vector2(593, 200)
+position = Vector2(551, 275)
 sprite_frames = ExtResource("15_lm6i3")
 
 [node name="Steps" type="Node2D" parent="OnTheGround/SequencePuzzle"]
@@ -196,7 +196,7 @@ collected_dialogue = ExtResource("19_xm5u1")
 dialogue_title = &"well_done"
 
 [node name="Sign" parent="OnTheGround" instance=ExtResource("20_dlwne")]
-position = Vector2(184, 434)
+position = Vector2(96, 434)
 direction = 1
 text = "Primera melodia: yellow, green, blue, red, yellow, yellow"
 
