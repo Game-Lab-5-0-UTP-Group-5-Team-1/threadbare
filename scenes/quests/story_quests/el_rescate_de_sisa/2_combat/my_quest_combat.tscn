@@ -129,12 +129,6 @@ distance = 10.0
 projectile_duration = 2.5
 projectile_sprite_frames = ExtResource("8_7ww5d")
 
-[node name="Target" parent="OnTheGround" instance=ExtResource("9_icwis")]
-position = Vector2(502, 164)
-sprite_frames = ExtResource("10_8csa8")
-label = "white"
-color = Color(1, 1, 1, 1)
-
 [node name="Target2" parent="OnTheGround" instance=ExtResource("9_icwis")]
 position = Vector2(758, 164)
 sprite_frames = ExtResource("10_8csa8")
@@ -148,22 +142,16 @@ label = "yellow"
 color = Color(1, 1, 0, 1)
 
 [node name="Target4" parent="OnTheGround" instance=ExtResource("9_icwis")]
-position = Vector2(632, 497)
+position = Vector2(603, 496)
 sprite_frames = ExtResource("10_8csa8")
-label = "magenta"
-color = Color(1, 0, 1, 1)
+label = "orange"
+color = Color(1, 0.5176471, 0, 1)
 
 [node name="Target5" parent="OnTheGround" instance=ExtResource("9_icwis")]
-position = Vector2(633, 164)
+position = Vector2(609, 163)
 sprite_frames = ExtResource("10_8csa8")
 label = "green"
 color = Color(0, 1, 0, 1)
-
-[node name="Target6" parent="OnTheGround" instance=ExtResource("9_icwis")]
-position = Vector2(501, 497)
-sprite_frames = ExtResource("10_8csa8")
-label = "cian"
-color = Color(0, 1, 1, 1)
 
 [node name="CollectibleItem" parent="OnTheGround" instance=ExtResource("11_l3ota")]
 unique_name_in_owner = true

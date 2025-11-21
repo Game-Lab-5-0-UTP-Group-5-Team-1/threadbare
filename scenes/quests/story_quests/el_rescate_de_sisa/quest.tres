@@ -7,7 +7,7 @@
 script = ExtResource("1_nsb1j")
 title = "El rescate de Sisa"
 description = "Cuando Supay roba a Sumac Sisa por envidia, el Inca Sinchi Alqamari inicia una búsqueda sin retorno. Para llegar al templo final, deberá sobrevivir a los desafios, una caberna de guardianes andinos y el jefe Muqui Supay. Es una travesía de fe, pérdida y sangre, cuyo camino se sella con el sacrificio."
-authors = Array[String](["Cervando Yactayo", "Franco Ccorahua", "Luis Ernesto Cruz Gonzales"])
+authors = Array[String](["Cervando Yactayo Robles", "Franco Ccorahua Tizon", "Luis Cruz Gonzales"])
 affiliation = "UTP"
 first_scene = "uid://cdfl51my8oow7"
 sprite_frames = ExtResource("2_3fphb")
