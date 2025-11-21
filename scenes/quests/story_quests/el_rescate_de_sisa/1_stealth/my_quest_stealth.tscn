@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://d37mebu7atru7" path="res://scenes/game_elements/characters/enemies/guard/guard.tscn" id="5_gsfom"]
 [ext_resource type="Texture2D" uid="uid://ctpuwwuifctia" path="res://scenes/quests/story_quests/el_rescate_de_sisa/my_tiles/Inca Game Assets by Kronbits (2).png" id="5_wxm85"]
 [ext_resource type="SpriteFrames" uid="uid://bs7h6478buypv" path="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/my_quest_guard_enemy.tres" id="6_isy6c"]
-[ext_resource type="SpriteFrames" uid="uid://dkldbyul3gceg" path="res://scenes/quests/story_quests/stella/1_stella_stealth/stella_stealth_components/stella_guard_enemy.tres" id="7_11nfe"]
 [ext_resource type="PackedScene" uid="uid://dua6mynlw2ptw" path="res://scenes/game_elements/props/checkpoint/checkpoint.tscn" id="7_t6ury"]
 [ext_resource type="Resource" uid="uid://cvv05ihqtk7f" path="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/my_quest_checkpoint.dialogue" id="8_q0wfm"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="9_kle7g"]
@@ -18,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://bm5pfae6h7isn" path="res://scenes/quests/story_quests/el_rescate_de_sisa/audio_assets/RTS2 Loop 010 80BPM.wav" id="10_wxm85"]
 [ext_resource type="AudioStream" uid="uid://ft60mn6xov5i" path="res://scenes/quests/story_quests/el_rescate_de_sisa/audio_assets/RTS2 Loop 005 60Bpm.wav" id="11_kle7g"]
 [ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="11_wxm85"]
+[ext_resource type="SpriteFrames" uid="uid://v8ljx3wsw6jj" path="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/rescate_sisa_guard_enemy.tres" id="12_07u2b"]
 [ext_resource type="Resource" uid="uid://f4v4xsleuo1i" path="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/my_quest_collected.dialogue" id="12_ntvxf"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="13_boo2d"]
 [ext_resource type="Resource" uid="uid://c23jewgbkctse" path="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/my_quest_stealth.dialogue" id="14_ygauf"]
@@ -255,13 +255,14 @@ y_sort_enabled = true
 
 [node name="Guard1-GoingBackAndForth" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(525.9997, 470.00003)
+scale = Vector2(1.8227191, 1.758911)
 sprite_frames = ExtResource("6_isy6c")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("9_q0wfm")
 patrol_path = NodePath("../Guard1-PatrolPath")
 move_speed = 350.0
 time_to_detect_player = 0.7999999999999999
-detection_area_scale = 0.9
+detection_area_scale = 0.4
 
 [node name="Guard1-PatrolPath" type="Path2D" parent="EnemyGuards"]
 top_level = true
@@ -271,6 +272,7 @@ curve = SubResource("Curve2D_woqv8")
 
 [node name="Guard2-RunningInCircles" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(2435, 382)
+scale = Vector2(1.823, 1.823)
 sprite_frames = ExtResource("6_isy6c")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("9_q0wfm")
@@ -285,28 +287,31 @@ curve = SubResource("Curve2D_vend2")
 
 [node name="Guard1" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(991, 836)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("11_kle7g")
 patrol_path = NodePath("../Guard1-PatrolPath2")
 wait_time = 0.2
 move_speed = 350.0
 time_to_detect_player = 0.5
-detection_area_scale = 0.7999999999999999
+detection_area_scale = 0.4
 
 [node name="Guard2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(176, 1372)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("11_kle7g")
 patrol_path = NodePath("../Guard2-PatrolPath2")
 wait_time = 0.2
 move_speed = 350.0
 time_to_detect_player = 0.5
-detection_area_scale = 0.7999999999999999
+detection_area_scale = 0.30000000000000004
 
 [node name="Guard2-RunningInCircles2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(461, 846)
+scale = Vector2(1.823, 1.823)
 sprite_frames = ExtResource("6_isy6c")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("9_q0wfm")
@@ -321,12 +326,13 @@ curve = SubResource("Curve2D_06i44")
 
 [node name="Guard1-GoingBackAndForth2" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(1789, 1571)
+scale = Vector2(1.823, 1.823)
 sprite_frames = ExtResource("6_isy6c")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("9_q0wfm")
 patrol_path = NodePath("../Guard1-GoingBackAndForth2-PatrolPath")
 move_speed = 350.0
-detection_area_scale = 0.5
+detection_area_scale = 0.30000000000000004
 
 [node name="Guard1-GoingBackAndForth2-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(1789, 1571)
@@ -334,15 +340,17 @@ curve = SubResource("Curve2D_gsfom")
 
 [node name="Guard1-GoingBackAndForth3" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(2422, 1376)
+scale = Vector2(1.823, 1.823)
 sprite_frames = ExtResource("6_isy6c")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("9_q0wfm")
 patrol_path = NodePath("../Guard1-GoingBackAndForth3-PatrolPath")
 move_speed = 350.0
-detection_area_scale = 0.9
+detection_area_scale = 0.30000000000000004
 
 [node name="Guard2-RunningInCircles3" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(2026, 2067.8713)
+scale = Vector2(1.823, 1.823)
 sprite_frames = ExtResource("6_isy6c")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("9_q0wfm")
@@ -366,7 +374,8 @@ curve = SubResource("Curve2D_xnyqe")
 
 [node name="Guard5" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(1499, 1848)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("11_kle7g")
 patrol_path = NodePath("../Guard5-PatrolPath")
@@ -374,7 +383,7 @@ wait_time = 0.8
 move_speed = 400.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.1
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard5-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(1501, 2309)
@@ -382,25 +391,27 @@ curve = SubResource("Curve2D_q0wfm")
 
 [node name="Guard7" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(1301, 2240)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 patrol_path = NodePath("../Guard7-PatrolPath")
 wait_time = 0.4
 move_speed = 200.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard16" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(1301, 2240)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 patrol_path = NodePath("../Guard7-PatrolPath")
 wait_time = 0.4
 move_speed = 200.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard7-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(1306, 2336)
@@ -408,45 +419,48 @@ curve = SubResource("Curve2D_kle7g")
 
 [node name="Guard9" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(1119, 2215)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 footsteps_sound_stream = ExtResource("11_kle7g")
 patrol_path = NodePath("../Guard9-PatrolPath")
 wait_time = 0.2
 move_speed = 600.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard9-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(1116, 2251)
 curve = SubResource("Curve2D_4syvr")
 
 [node name="Guard10" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
-position = Vector2(1113, 1547)
-sprite_frames = ExtResource("7_11nfe")
+position = Vector2(1112, 1645)
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("11_kle7g")
 patrol_path = NodePath("../Guard10-PatrolPath")
 wait_time = 0.2
-move_speed = 800.0
+move_speed = 280.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard10-PatrolPath" type="Path2D" parent="EnemyGuards"]
-position = Vector2(1118, 1547)
+position = Vector2(1117, 1645)
 curve = SubResource("Curve2D_wxm85")
 
 [node name="Guard11" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(922, 2018)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 patrol_path = NodePath("../Guard11-PatrolPath")
 wait_time = 0.4
 move_speed = 300.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard11-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(915, 2337)
@@ -454,36 +468,39 @@ curve = SubResource("Curve2D_ntvxf")
 
 [node name="Guard12" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(922, 2060)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("9_q0wfm")
 patrol_path = NodePath("../Guard12-PatrolPath")
 wait_time = 0.2
 move_speed = 500.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard18" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(922, 2060)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 patrol_path = NodePath("../Guard12-PatrolPath")
 wait_time = 0.2
 move_speed = 500.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard19" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(922, 2060)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 patrol_path = NodePath("../Guard12-PatrolPath")
 wait_time = 0.2
 move_speed = 500.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard12-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(921, 1555)
@@ -491,14 +508,15 @@ curve = SubResource("Curve2D_boo2d")
 
 [node name="Guard13" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(727, 1743)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 patrol_path = NodePath("../Guard13-PatrolPath")
 wait_time = 0.1
 move_speed = 500.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard13-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(729, 2336)
@@ -506,7 +524,8 @@ curve = SubResource("Curve2D_ygauf")
 
 [node name="Guard14" parent="EnemyGuards" node_paths=PackedStringArray("patrol_path") instance=ExtResource("5_gsfom")]
 position = Vector2(731, 1768)
-sprite_frames = ExtResource("7_11nfe")
+scale = Vector2(1.823, 1.823)
+sprite_frames = ExtResource("12_07u2b")
 alerted_sound_stream = ExtResource("10_wxm85")
 footsteps_sound_stream = ExtResource("11_kle7g")
 patrol_path = NodePath("../Guard14-PatrolPath")
@@ -514,7 +533,7 @@ wait_time = 0.8
 move_speed = 200.0
 player_instantly_detected_on_sight = true
 time_to_detect_player = 0.5
-detection_area_scale = 0.2
+detection_area_scale = 0.1
 
 [node name="Guard14-PatrolPath" type="Path2D" parent="EnemyGuards"]
 position = Vector2(732, 1548)

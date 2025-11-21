@@ -1,16 +1,58 @@
-[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://pii5sv506grh"]
+[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://pii5sv506grh"]
 
-[ext_resource type="Texture2D" uid="uid://c8kgju5kov1ax" path="res://scenes/quests/story_quests/el_rescate_de_sisa/2_combat/combat_components/my_quest_projectile.png" id="1_e8x6o"]
+[ext_resource type="Texture2D" uid="uid://dpllmali71pqk" path="res://scenes/quests/story_quests/el_rescate_de_sisa/2_combat/combat_components/my_muqui_projectile.png" id="1_2q5h0"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_a6ony"]
-atlas = ExtResource("1_e8x6o")
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnsu0"]
+atlas = ExtResource("1_2q5h0")
 region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qplv"]
+atlas = ExtResource("1_2q5h0")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdm34"]
+atlas = ExtResource("1_2q5h0")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6dhu"]
+atlas = ExtResource("1_2q5h0")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyxt5"]
+atlas = ExtResource("1_2q5h0")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_41vfd"]
+atlas = ExtResource("1_2q5h0")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_576pn"]
+atlas = ExtResource("1_2q5h0")
+region = Rect2(384, 0, 64, 64)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_a6ony")
+"texture": SubResource("AtlasTexture_fnsu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qplv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdm34")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6dhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyxt5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_41vfd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_576pn")
 }],
 "loop": true,
 "name": &"default",

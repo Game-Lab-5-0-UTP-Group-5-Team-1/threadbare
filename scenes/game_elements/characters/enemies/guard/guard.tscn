@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c75ofhy3swhj3" path="res://scenes/game_elements/characters/enemies/guard/components/exclamation_mark.png" id="3_pnkgp"]
 [ext_resource type="Script" uid="uid://cxsi2xqcdyw7g" path="res://scenes/game_elements/characters/enemies/guard/components/light.gd" id="4_lptvm"]
 [ext_resource type="Script" uid="uid://bnbt0iw1a1w6" path="res://scenes/game_elements/characters/enemies/guard/components/detection_area.gd" id="4_mswbt"]
-[ext_resource type="SpriteFrames" uid="uid://ovu5wqo15s5g" path="res://scenes/quests/story_quests/NO_EDIT/1_NO_EDIT_stealth/NO_EDIT_stealth_components/NO_EDIT_guard_enemy.tres" id="5_mswbt"]
+[ext_resource type="SpriteFrames" uid="uid://bs7h6478buypv" path="res://scenes/quests/story_quests/el_rescate_de_sisa/1_stealth/stealth_components/my_quest_guard_enemy.tres" id="6_8vt0k"]
 [ext_resource type="Script" uid="uid://dy68p7gf07pi3" path="res://scenes/game_logic/character_sprite_behavior.gd" id="7_klpct"]
 [ext_resource type="Script" uid="uid://b3hx1n2yl88qr" path="res://scenes/game_logic/character_animation_player_behavior.gd" id="9_8vt0k"]
 
@@ -221,6 +221,8 @@ unique_name_in_owner = true
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InstantDetectionArea"]
+position = Vector2(-0.99999994, -11)
+scale = Vector2(0.71415013, 0.6741712)
 shape = SubResource("CircleShape2D_g173s")
 
 [node name="DetectionArea" type="Area2D" parent="."]
@@ -249,9 +251,9 @@ polygon = PackedVector2Array(302, 48, 283, 52, 279, 52, 101, 114, 98, 114, 79, 1
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(0, -16)
-sprite_frames = ExtResource("5_mswbt")
+scale = Vector2(1.0998449, 1.0596184)
+sprite_frames = ExtResource("6_8vt0k")
 animation = &"walk"
-autoplay = "idle"
 
 [node name="CharacterSpriteBehavior" type="Node2D" parent="AnimatedSprite2D" node_paths=PackedStringArray("character", "sprite")]
 script = ExtResource("7_klpct")
