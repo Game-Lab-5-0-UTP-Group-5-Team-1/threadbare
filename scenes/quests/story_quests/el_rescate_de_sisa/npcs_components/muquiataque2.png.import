@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lrt8cj26bhmf"
-path="res://.godot/imported/New Piskel (11).png-8c9a4b9fc18807f7e1adaf876e870f21.ctex"
+uid="uid://xga5qg4n6le8"
+path="res://.godot/imported/muquiataque2.png-a511368eedfe14729de0197f5984970c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/New Piskel (11).png"
-dest_files=["res://.godot/imported/New Piskel (11).png-8c9a4b9fc18807f7e1adaf876e870f21.ctex"]
+source_file="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/muquiataque2.png"
+dest_files=["res://.godot/imported/muquiataque2.png-a511368eedfe14729de0197f5984970c.ctex"]
 
 [params]
 

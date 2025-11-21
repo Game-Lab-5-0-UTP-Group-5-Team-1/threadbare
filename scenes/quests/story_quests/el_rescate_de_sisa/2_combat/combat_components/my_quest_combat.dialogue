@@ -1,11 +1,24 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
+
 # SPDX-License-Identifier: MPL-2.0
 
+
 ~ start
-Something in this scene will throw projectiles at you. The goal is to redirect them toward the targets.
-Explore the Scene Tree to add, change, or remove elements.
+
+El aire se vuelve pesado… Un susurro sale de las paredes húmedas del túnel.
+
+Muki: “He esperado siglos a que alguien como tú entre a mis dominios… Si recuperar a tu amada, tendrás que esquivar mis golpes y demostrar que no temes a la oscuridad.”
+
+Prepárate. El Muki está a punto de atacar.
+
+Vencelo haciendo que sus proyectiles debiliten sus totems corruptos. Es fuente de su poder, ¡debilitalo y vence!.
+
 => END
 
+
 ~ well_done
-You can add text here after the player takes the collectible. Be creative with this one!
+
+Muki: “Hmph… nunca imaginé que un humano resistiría mis embestidas. Al parecer, es mi final...
+
+
 => END

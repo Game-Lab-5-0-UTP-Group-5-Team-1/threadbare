@@ -1,6 +1,9 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
+
 ~ start
-Select the CollectibleItem node and set "Next Scene" and "Item > Type" in the Inspector.
-You're doin' great!
+
+Frente a ti brilla una antigua llave forjada en los túneles del subsuelo. 
+Recógela y continúa tu camino.
+
 => END
