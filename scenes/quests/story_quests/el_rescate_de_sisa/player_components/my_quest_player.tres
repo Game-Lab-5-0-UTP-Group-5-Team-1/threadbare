@@ -1,7 +1,7 @@
 [gd_resource type="SpriteFrames" load_steps=50 format=3 uid="uid://dslkbv8w5d82g"]
 
 [ext_resource type="Texture2D" uid="uid://1ylnyp6afco6" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_quest_player_attack_01.png" id="1_hac6d"]
-[ext_resource type="Texture2D" uid="uid://de6emxchpy563" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_quest_player_attack_02.png" id="2_hmrgq"]
+[ext_resource type="Texture2D" uid="uid://bs6be8a70bweu" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_hero_quest_attack_01.png" id="2_cc7cu"]
 [ext_resource type="Texture2D" uid="uid://tmooqrgropgj" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_hero_quest_defeated.png" id="3_hac6d"]
 [ext_resource type="Texture2D" uid="uid://rixnis58hx8r" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_hero_quest_idle.png" id="4_hac6d"]
 [ext_resource type="Texture2D" uid="uid://bmy8dy2ntnlju" path="res://scenes/quests/story_quests/el_rescate_de_sisa/player_components/my_hero_quest_walk.png" id="5_hac6d"]
@@ -23,21 +23,21 @@ region = Rect2(384, 0, 192, 192)
 atlas = ExtResource("1_hac6d")
 region = Rect2(576, 0, 192, 192)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gjf71"]
-atlas = ExtResource("2_hmrgq")
-region = Rect2(0, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_cc7cu"]
+atlas = ExtResource("2_cc7cu")
+region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_eyp3i"]
-atlas = ExtResource("2_hmrgq")
-region = Rect2(192, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwm15"]
+atlas = ExtResource("2_cc7cu")
+region = Rect2(192, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nw7ra"]
-atlas = ExtResource("2_hmrgq")
-region = Rect2(384, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbxbb"]
+atlas = ExtResource("2_cc7cu")
+region = Rect2(448, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3yb8r"]
-atlas = ExtResource("2_hmrgq")
-region = Rect2(576, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_x35bb"]
+atlas = ExtResource("2_cc7cu")
+region = Rect2(512, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a6t4g"]
 atlas = ExtResource("3_hac6d")
@@ -200,16 +200,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gjf71")
+"texture": SubResource("AtlasTexture_cc7cu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_eyp3i")
+"texture": SubResource("AtlasTexture_bwm15")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_nw7ra")
+"texture": SubResource("AtlasTexture_jbxbb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3yb8r")
+"texture": SubResource("AtlasTexture_x35bb")
 }],
 "loop": true,
 "name": &"attack_02",

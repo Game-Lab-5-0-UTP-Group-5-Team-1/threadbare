@@ -1,33 +1,42 @@
-[gd_resource type="SpriteFrames" load_steps=32 format=3 uid="uid://cup418upyd4vt"]
+[gd_resource type="SpriteFrames" load_steps=35 format=3 uid="uid://cup418upyd4vt"]
 
-[ext_resource type="Texture2D" uid="uid://cjx4dbgls2eog" path="res://scenes/quests/story_quests/el_rescate_de_sisa/2_combat/combat_components/my_quest_throwing_enemy_attack.png" id="1_qmk6s"]
-[ext_resource type="Texture2D" uid="uid://lrt8cj26bhmf" path="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/New Piskel (11).png" id="2_brrxb"]
+[ext_resource type="Texture2D" uid="uid://xga5qg4n6le8" path="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/muquiataque2.png" id="1_kf1iv"]
+[ext_resource type="Texture2D" uid="uid://lrt8cj26bhmf" path="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/my_enemy_dead.png" id="2_brrxb"]
+[ext_resource type="Texture2D" uid="uid://b128gu10mntbf" path="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/my_enemy_attack1.png" id="2_lps8v"]
 [ext_resource type="Texture2D" uid="uid://cg2url65lp11p" path="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/my_enemy_idle.png" id="3_brrxb"]
 [ext_resource type="Texture2D" uid="uid://d35wwukfqqrlq" path="res://scenes/quests/story_quests/el_rescate_de_sisa/npcs_components/my_enemy_walk.png" id="4_kf1iv"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mind4"]
-atlas = ExtResource("1_qmk6s")
-region = Rect2(384, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_du8s8"]
+atlas = ExtResource("1_kf1iv")
+region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_k4l6k"]
-atlas = ExtResource("1_qmk6s")
-region = Rect2(576, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_grux3"]
+atlas = ExtResource("1_kf1iv")
+region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rhel8"]
-atlas = ExtResource("1_qmk6s")
-region = Rect2(768, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5s7o"]
+atlas = ExtResource("1_kf1iv")
+region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_berh2"]
-atlas = ExtResource("1_qmk6s")
-region = Rect2(960, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_tugtj"]
+atlas = ExtResource("1_kf1iv")
+region = Rect2(192, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2682x"]
-atlas = ExtResource("1_qmk6s")
-region = Rect2(0, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_eue11"]
+atlas = ExtResource("2_lps8v")
+region = Rect2(256, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_l11hj"]
-atlas = ExtResource("1_qmk6s")
-region = Rect2(192, 0, 192, 192)
+[sub_resource type="AtlasTexture" id="AtlasTexture_5l3qm"]
+atlas = ExtResource("2_lps8v")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yy2kk"]
+atlas = ExtResource("2_lps8v")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nl1wm"]
+atlas = ExtResource("2_lps8v")
+region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kf1iv"]
 atlas = ExtResource("2_brrxb")
@@ -117,16 +126,16 @@ region = Rect2(448, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mind4")
+"texture": SubResource("AtlasTexture_du8s8")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k4l6k")
+"texture": SubResource("AtlasTexture_grux3")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rhel8")
+"texture": SubResource("AtlasTexture_l5s7o")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_berh2")
+"texture": SubResource("AtlasTexture_tugtj")
 }],
 "loop": false,
 "name": &"attack",
@@ -134,16 +143,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2682x")
+"texture": SubResource("AtlasTexture_eue11")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_l11hj")
+"texture": SubResource("AtlasTexture_5l3qm")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2682x")
+"texture": SubResource("AtlasTexture_yy2kk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_l11hj")
+"texture": SubResource("AtlasTexture_nl1wm")
 }],
 "loop": false,
 "name": &"attack anticipation",
